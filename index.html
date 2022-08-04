@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; color: white;}
+        body{background-color: #080808;}
+
+        main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        main > div {
+            width: 30em;
+            height: 30em;
+            padding: 2em;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.274);
+            border-radius: 2em;
+            background-color: #161616;
+            box-shadow: 0px 50px 30px -20px black;
+        }
+        main > div > li {color: tomato; font-size: 2em; list-style-type:none;}
+        main > div > li::before {
+            content: '➤';
+            font-size: .7em;
+            margin-right: .5em;
+        }
+        main > div > li::after {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background-color: rgba(128, 128, 128, 0.192);
+            display: block;
+            margin: .4em auto;
+        }
+        main > div > li > a {
+            color: gold;
+            text-decoration: none;
+            transition: all .1s;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        span {
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <li><a href="./NTF E-Sport Landing Page/index.html">NFT E-Sport Landing Page</a></li>
+        </div>
+        <span>wait for more...</span>
+    </main>
+</body>
+</html>
