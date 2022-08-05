@@ -217,7 +217,7 @@ main {
 div.brandings {
     width: 100%;
     text-align: center;
-    margin-bottom: 5em;
+    margin: 5em 0;
 
     img {
         width: 15em;
@@ -232,18 +232,20 @@ h4.session {
     -webkit-text-fill-color: transparent;
 }
 h1.call {
-    margin-top: 1em;
+    margin-top: .5em;
     text-align: center;
     font-size: 2em;
     font-family: $spaceGrotesk;
     color: white;
 }
 
+
+
 div.nft-navigation {
     margin: 2em 0 4em 0;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     div {
         cursor: pointer;
@@ -262,9 +264,9 @@ div.nft-navigation {
 div.nft-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 5em;
 }
 
 .nft-box {
@@ -280,12 +282,12 @@ div.nft-container {
     }
 
     img {
-        width: 25em;
+        width: 22em;
         border-radius: .5em;
     }
 
     div.first-column {
-        margin: .5em 0;
+        margin: 2em 0 .5em 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -348,6 +350,75 @@ div.nft-container {
         font-family: $DMono;
         &:hover {
             background: #ffffff3d;
+        }
+    }
+}
+
+
+
+
+div.create-container {
+    margin: 4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    div.card {
+        background: $bgmorphism;
+        color: white;
+        text-align: center;
+        padding: 3em 6em;
+        border-radius: .5em;
+
+        img {
+            width: 10em;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-family: $DMono;
+            margin: 1.2em 0;
+        }
+
+        p {
+            font-family: $spaceGrotesk;
+            font-size: .8em;
+            font-weight: 100;
+        }
+    }
+}
+
+div.create-buttons {
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    button {
+        cursor: pointer;
+        padding: .5em 2em;
+        color: white;
+        font-family: $spaceGrotesk;
+        font-size: 1.5em;
+        border-radius: .5em;
+        font-weight: 400;
+        transition: all .2s;
+    }
+    button#create {
+        background: $gradient;
+        border: none;
+
+        &:hover {
+            background: #dfa0fd88;
+        }
+    }
+    button#video {
+        background: transparent;
+        border: 2px solid white;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.151);
         }
     }
 }
