@@ -1,0 +1,353 @@
+@import 'variaveis';
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{background: #1c233d;}
+
+header {
+    width: 100%;
+    color: white;
+}
+
+//                  MENU
+nav.menu {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    padding: 0 2em;
+    color: #E5E5E5;
+    font-family: $spaceGrotesk;
+    
+    h1.logo {
+        font-size: 2em;
+        font-weight: medium;
+        cursor: pointer;
+    }
+
+    ul {
+        a {
+            padding: .5em 1em;
+            margin: .5em;
+            font-size: 1em;
+            color: #E5E5E5;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+}
+div.mini-container {
+    display: flex;
+    gap: 1em;
+
+    div.input {
+
+        .icon {
+            position: relative;
+            top: 0;
+            left: 12.5em;
+            
+        }
+
+        input[type="search"] {
+            border-radius: .5em;
+            font-size: 1em;
+            padding: .5em;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.651);
+            color: rgb(255, 255, 255);
+            font-family: $spaceGrotesk;
+        }
+    }
+
+    button#sign-in {
+        cursor: pointer;
+        border-radius: .5em;
+        border: none;
+        padding: 0 3em;
+        color: white;
+        background: $gradient;
+
+        &:hover {
+            background: #e4abffa6;
+        }
+    }
+}
+//                  MENU
+
+
+
+
+//                  HEADER
+div.section-header {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+div.content-header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    h1#hypertxt {
+        font-family: $spaceGrotesk;
+        font-size: 5em;
+    }
+    p#txt-info {
+        width: 25em;
+        font-family: $poppins;
+        font-size: 1em;
+    }
+    button {
+        cursor: pointer;
+        background: $gradient;
+        border: none;
+        width: 12em;
+        color: white;
+        padding: .6em 0;
+        border-radius: .5em;
+        font-size: 1.5em;
+        font-family: $spaceGrotesk;
+
+        &:hover {
+            background: #e4abffa6;
+        }
+    }
+
+    div.numbers {
+        margin-top: 5em;
+        display: flex;
+        gap: 3em;
+        text-align: center;
+
+        h1 {
+            font-size: 4em;
+            font-family: $spaceGrotesk;
+        }
+        p {
+            line-height: .1em;
+            font-family: $spaceGrotesk;
+        }
+    }
+}
+
+div.nft-header {
+
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bgmorphism;
+    border-radius: .5em;
+    font-family: $spaceGrotesk;
+
+    img#main-image {
+        width: 25em;
+        border-radius: .5em;
+    }
+}
+
+div.info-nft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    padding: 0 .2em;
+
+    .first {
+        margin-top: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .images {
+            img {
+                width: 2.5em;
+                border-radius: 3em;
+                margin-left: -1em;
+                box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.486);
+            }
+        }
+    }
+
+    .second {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-family: $DMono;
+        
+        
+        p {
+            font-weight: bold;
+            font-size: .8em;
+            color: gray;
+            font-weight: 100;
+        }
+        p#bold-text {
+            color: white;
+            font-size: .9em;
+            font-weight: 100;
+        }
+    }
+
+
+}
+//                  HEADER
+
+
+
+
+//                  MAIN
+main {
+    padding: 0 10em;
+}
+
+div.brandings {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5em;
+
+    img {
+        width: 15em;
+    }
+}
+
+h4.session {
+    text-align: center;
+    font-family: $DMono;
+    background: -webkit-linear-gradient(#b768db, #3f4363);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.call {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-family: $spaceGrotesk;
+    color: white;
+}
+
+div.nft-navigation {
+    margin: 2em 0 4em 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    div {
+        cursor: pointer;
+        background: $bgmorphism;
+        border-radius: .5em;
+        padding: 1em 2em;
+        color: white;
+        font-family: $DMono;
+
+        &:hover {
+            background-color: rgba(168, 83, 83, 0.603);
+        }
+    }
+}
+
+div.nft-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.nft-box {
+    cursor: pointer;
+    text-align: center;
+    padding: 1em;
+    background: $bgmorphism;
+    border-radius: .5em;
+    transition: all .2s;
+
+    &:hover {
+        background: #ffffff3d;
+    }
+
+    img {
+        width: 25em;
+        border-radius: .5em;
+    }
+
+    div.first-column {
+        margin: .5em 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            font-family: $spaceGrotesk;
+            h4 {
+                text-align: left;
+                color: white;
+            }
+            p {
+                text-align: left;
+                color: white;
+            }
+            span#nickname {
+                font-weight: 600;
+            }
+        }
+
+        img {
+            width: 2.7em;
+            border-radius: 50%;
+        }
+    }
+
+    div.second-column {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-family: $DMono;
+        
+        
+        p {
+            font-weight: bold;
+            font-size: .7em;
+            color: gray;
+            font-weight: 100;
+        }
+        p#bold-text {
+            color: white;
+            font-size: .9em;
+            font-weight: 100;
+        }
+    }
+}
+
+
+.viewmore {
+    margin: 5em 0;
+    text-align: center;
+
+    button#more {
+        cursor: pointer;
+        background: $bgmorphism;
+        padding: 1.5em 5em;
+        color: white;
+        border: none;
+        border-radius: .5em;
+        font-family: $DMono;
+        &:hover {
+            background: #ffffff3d;
+        }
+    }
+}
